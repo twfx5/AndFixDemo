@@ -26,7 +26,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    // 引入AndFix库，为什么有些库还需要在Project的build.gradle文件中引入
+    // 引入AndFix热修复模块
+    // 为什么有些库还需要在Project的build.gradle文件中引入
     // 因为App的build.gradle文件中的节点都是类或者方法，有些类运行时需要另外的脚本，
     // 所以需要在Project的build.gradle文件的classpath再引入gradle脚本
     implementation 'com.alipay.euler:andfix:0.5.0@aar'
